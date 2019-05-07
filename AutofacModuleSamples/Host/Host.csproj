@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FeatureA\FeatureA.Contracts\FeatureA.Contracts.csproj" />
+    <ProjectReference Include="..\FeatureA\FeatureA.Implementations\FeatureA.Implementations.csproj" />
+    <ProjectReference Include="..\FeatureB\FeatureB.Contracts\FeatureB.Contracts.csproj" />
+    <ProjectReference Include="..\FeatureB\FeatureB.Implementations\FeatureB.Implementations.csproj" />
+    <ProjectReference Include="..\Infra\Shared.Contracts\Shared.Contracts.csproj" />
+    <ProjectReference Include="..\Infra\Shared\Shared.csproj" />
+  </ItemGroup>
+
+</Project>
